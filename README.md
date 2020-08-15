@@ -1,2 +1,2 @@
 # flappyjs
-El tipico juego de platzi
+El tipico juego de flappy

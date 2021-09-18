@@ -1,16 +1,24 @@
 <html>
 	<head>
 		<title>Flappy Bird</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style type="text/css">
 			body{
 				background: black;
 			}
-
-			canvas{
+			canvas{	
+				width: 100%;
+				height: auto;
     			position: absolute;
     			top: 50%;
     			left: 50%;
     			transform: translate(-50%, -50%);               
+			}
+			@media only screen and (min-width: 600px) {
+				canvas{
+					width: 288px;
+					height: 512px;
+				}
 			}
 		</style>
 	</head>

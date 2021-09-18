@@ -28,14 +28,14 @@ crashSound.src="recursos/sounds/crash-sound.mp3";
 
 //variables
 var gap=85;
-var sepacion=tuberiaSuperior.height+gap
+var sepacion=(tuberiaSuperior.height==0?242:tuberiaSuperior.height)+gap;
 var posFlapX=10;
 var posFlapY=150;
 var score=0;
 
 //constantes
 var gravity=1.4;
-var movimientoFlappy=27;
+var movimientoFlappy=40;
 
 //listener
 document.addEventListener("keydown",moverArriba);
@@ -79,8 +79,8 @@ function draw() {
 			posFlapY + flappy.height>= canvas.height - fondoFrente.height
 
 		){
-			crashSound.play();
-    		location.reload();
+			//crashSound.play();
+			setTimeout(() => {location.reload()}, 250); 
 		}
 
 		if(tuberia[i].x==5){
@@ -99,4 +99,3 @@ function draw() {
 	requestAnimationFrame(draw);
 }
 draw();
-

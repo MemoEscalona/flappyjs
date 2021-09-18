@@ -35,7 +35,7 @@ var score=0;
 
 //constantes
 var gravity=1.4;
-var movimientoFlappy=40;
+var movimientoFlappy=27;
 
 //listener
 document.addEventListener("keydown",moverArriba);

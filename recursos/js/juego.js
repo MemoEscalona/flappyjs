@@ -11,11 +11,11 @@ var fondoFrente = new Image();
 var tuberiaSuperior = new Image();
 var tuberiaInferior = new Image();
 
-fondo.src="recursos/images/bg.png";
-flappy.src="recursos/images/bird.png";
-fondoFrente.src="recursos/images/fg.png";
-tuberiaSuperior.src="recursos/images/pipeNorth.png";
-tuberiaInferior.src="recursos/images/pipeSouth.png";
+fondo.src="recursos/images/mk/bg.png";
+flappy.src="recursos/images/mk/bird.png";
+fondoFrente.src="recursos/images/mk/fg.png";
+tuberiaSuperior.src="recursos/images/mk/pipeNorth.png";
+tuberiaInferior.src="recursos/images/mk/pipeSouth.png";
 
 //carga de audio
 var flySound=new Audio();
@@ -93,7 +93,7 @@ function draw() {
 	contexto.drawImage(fondoFrente,0,canvas.height-fondoFrente.height);
 	contexto.drawImage(flappy,posFlapX,posFlapY);
 	posFlapY+=gravity;
-	contexto.fillStyle="#000";
+	contexto.fillStyle="#FFF";
 	contexto.font="20px Verdana";
 	contexto.fillText("Score: "+score,10,canvas.height-20);
 	requestAnimationFrame(draw);

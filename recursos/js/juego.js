@@ -81,7 +81,7 @@ function draw() {
 
 		){
 			//crashSound.play();
-			setTimeout(() => {location.reload()}, 250); 
+			location.reload() 
 		}
 
 		if(tuberia[i].x==5){

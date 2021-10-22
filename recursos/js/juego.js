@@ -39,6 +39,7 @@ var movimientoFlappy=27;
 
 //listener
 document.addEventListener("keydown",moverArriba);
+document.addEventListener("click",moverArriba);
 
 //moverArriba
 function moverArriba() {

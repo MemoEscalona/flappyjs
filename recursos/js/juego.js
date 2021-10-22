@@ -81,7 +81,9 @@ function draw() {
 
 		){
 			//crashSound.play();
-			location.reload() 
+			var posFlapX=10;
+			var posFlapY=150;
+			var score=0;
 		}
 
 		if(tuberia[i].x==5){
